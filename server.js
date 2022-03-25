@@ -1,5 +1,7 @@
 const express = require('express');
-const PORT = 3030;
+const dotenv = require('dotenv')
+dotenv.config()
+const PORT =  process.env.PORT || 3000;
 const app = express();
 
 app.listen(PORT, ()=>{
